@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Poppins: 'Poppins', sans-serif;
+    --Background: #130f40;
+    --CardBackground: #30336b;
+    --White: #fff;
+    --LifeTrue: #6ab04c;
+    --LifeFalse: #eb4d4b;
+    --SemiGray: #95afc0;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--Poppins);
+    font-weight: 400;
+    background-color: var(--Background);
+}
+
+.navbar{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__logo{
+    width: 350px;
+}
+
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.character{
+    width: 600px;
+    height: 240px;
+    margin: 30px;
+    background-color: var(--CardBackground);
+    color: var(--White);
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 2px 21px -5px rgba(48,51,107,1);
+}
+
+.character:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.character__bg{
+    height: 100%;
+    width: 229px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.character__header{
+    margin-bottom: 10px;
+}
+
+.character__info{
+    margin-bottom: 10px;
+}
+
+.character__texts{
+    width: 371px;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.character__texts-title{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.character__text-info{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.Alive{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    clip-path: circle(50%);
+    background-color: var(--LifeTrue);
+}
+
+.unknown{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    clip-path: circle(50%);
+    background-color: var(--SemiGray);
+}
+
+.Dead{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    clip-path: circle(50%);
+    background-color: var(--LifeFalse);
+}
+
+.character__info-title{
+    color: var(--SemiGray);
+    font-size: 15px;
+}
